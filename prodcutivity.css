@@ -1,0 +1,123 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #1c1c1c; /* dark background */
+  color: #eaeaea;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Productivity Section Container */
+section#productivity {
+  max-width: 950px;
+  margin: 2.5rem auto;
+  padding: 2.5rem;
+  background: #fff; /* white card */
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 0.7s ease;
+  color: #232f3e;
+}
+
+/* Section Heading */
+section#productivity h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ff9900; /* Amazon orange */
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 4px solid #232f3e;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+/* Article Headings */
+section#productivity h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #37475a;
+  border-left: 5px solid #ff9900;
+  padding-left: 0.8rem;
+}
+
+/* Paragraph */
+section#productivity p {
+  margin: 1.2rem 0;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Productivity Tips List */
+section#productivity ul {
+  margin: 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+section#productivity li {
+  margin: 0.8rem 0;
+  padding: 0.9rem 1rem;
+  background: #fdfdfd;
+  border-left: 6px solid #ff9900;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Add lightning icon before list items */
+section#productivity li::before {
+  content: "⚡";
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Hover effect for tips */
+section#productivity li:hover {
+  background: #fff7ec;
+  transform: translateX(6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Home button (green like safety) */
+a button {
+  display: block;
+  margin: 2.5rem auto 0;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2a9d8f, #21867a);
+  color: white;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+a button:hover {
+  background: linear-gradient(135deg, #21867a, #1a6a5d);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

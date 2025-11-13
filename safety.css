@@ -1,0 +1,130 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0fff4; /* 🌿 lightest green */
+  color: #232f3e;
+  line-height: 1.6;
+}
+
+/* Safety Page Container */
+section#safety {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  animation: fadeIn 0.7s ease;
+}
+
+/* Section Title */
+section#safety h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff9900;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 4px solid #232f3e;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+/* Article Headings */
+section#safety h3 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #37475a;
+  border-left: 5px solid #ff9900;
+  padding-left: 0.8rem;
+}
+
+/* Paragraph */
+section#safety p {
+  margin: 1.2rem 0;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+/* Highlight text */
+.highlight {
+  background: #ff9900;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* Safety Tips List */
+section#safety ul {
+  margin: 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+section#safety li {
+  margin: 0.8rem 0;
+  padding: 0.9rem 1rem;
+  background: #f9fefb; /* subtle green-tinted card */
+  border-left: 6px solid #2a9d8f;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Icons before list items */
+section#safety li::before {
+  content: "✔";
+  color: #2a9d8f;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Hover animation */
+section#safety li:hover {
+  background: #e6fff2;
+  transform: translateX(6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Button Back to Home */
+a button {
+  display: block;
+  margin: 2.5rem auto 0;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2a9d8f, #21867a);
+  color: white;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+a button:hover {
+  background: linear-gradient(135deg, #21867a, #1a6a5d);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}

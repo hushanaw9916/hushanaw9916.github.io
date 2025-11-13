@@ -1,0 +1,118 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amazon Ember", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #1c1c1c; /* dark gray background */
+  color: #eaeaea;
+  line-height: 1.7;
+  padding: 2rem;
+}
+
+/* Section Container */
+section {
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 2.2rem;
+  background: #fff; /* white card */
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 0.7s ease;
+  color: #232f3e;
+}
+
+/* Main Page Heading */
+h1 {
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #ff9900; /* Amazon orange */
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #37475a;
+  margin-bottom: 1.2rem;
+  border-left: 6px solid #ff9900;
+  padding-left: 0.8rem;
+}
+
+/* Sub-Headings */
+section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #2a9d8f;
+}
+
+/* Paragraphs */
+section p {
+  margin: 0.8rem 0;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* Lists */
+section ul {
+  list-style: none;
+  margin: 1rem 0;
+  padding-left: 0;
+}
+
+section li,
+section ul p { /* handle your ASIN p tags inside ul */
+  margin: 0.6rem 0;
+  padding: 0.8rem 1rem;
+  background: #fdfdfd;
+  border-left: 6px solid #ff9900;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Hover effect for list items */
+section li:hover,
+section ul p:hover {
+  background: #fff7ec;
+  transform: translateX(6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* ✅ Button (universal, same across all pages) */
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 3rem auto 0;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #2a9d8f, #21867a);
+  color: white;
+  text-decoration: none;
+  border-radius: 35px;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #21867a, #1a6a5d);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
